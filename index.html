@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA</title>
+    <link rel="icon" type="images/x-icon" href="../images/favicon.png">
+    <link rel="icon" type="images/x-icon" href="../images/favicon@2x.png">
+    <link rel="icon" type="images/x-icon" href="../images/favicon@3x.png">
+    <!-- bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/lightbox.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <!-- BS-Carousel換圖輪播 -->
+    <!-- 設定自動撥放data-bs-ride="carousel" -->
+    <!-- 設定游標放在圖片上時還是會輪播data-bs-pause="false" -->
+    <!-- 設定輪播秒數data-bs-interval="3500" -->
+    <!-- 添加class修改為淡入淡出.carousel-fade -->
+    
+    <header id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+        data-bs-pause="false" data-bs-interval="3500">
+        <!-- 輪播指示器 -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <!-- 圖片區 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/slide01.jpg" class="d-block w-100" alt="...">
+                <!-- 文字區 -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/slide02.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/slide03.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/slide04.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <!-- 上一張&下一張切換按鈕 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </header>
+    <!-- 導覽列navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- 品牌名稱LOGO -->
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.svg" alt="zara logo">
+            </a>
+            <!-- 漢堡按鈕 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 主選單 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <!-- 下拉選單:添加 .dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            男裝
+                        </a>
+                        <!-- 子選單 -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">上身</a></li>
+                            <li><a class="dropdown-item" href="#">下身</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">配件</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            女裝
+                        </a>
+                        <!-- 子選單 -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">上身</a></li>
+                            <li><a class="dropdown-item" href="#">下身</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">配件</a></li>
+                        </ul>
+                    </li>
+                    <!-- 禁用按鈕:添加 .disabled -->
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">會員管理</a>
+                    </li>
+                </ul>
+                <!-- 搜尋欄位 -->
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="請輸入關鍵字" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">搜尋</button>
+                </form> -->
+
+                <ul class="icon">
+                    <!-- 收合的搜尋欄位 -->
+                    <li class="search_bar">
+                        <input type="search" name="search" id="search">
+                        <input type="submit" name="search_btn" id="search_btn" value="">
+                    </li>
+                    <li><a href=""><img src="../images/icon-member.svg" alt=""></a></li>
+                    <li><a href=""><img src="../images/icon-order.svg" alt=""></a></li>
+                    <li><a href=""><img src="../images/icon-cart.svg" alt=""></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="new" class="container">
+            <h3 class="title">最新商品</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="mask">
+                        <a href="#">
+                            <h4>NEW TITLE</h4>
+                            <img src="../images/new1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mask">
+                        <a href="#">
+                            <h4>NEW TITLE</h4>
+                            <img src="../images/new2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mask">
+                        <a href="#">
+                            <h4>NEW TITLE</h4>
+                            <img src="../images/new3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hot" class="container">
+            <h3 class="title">熱門商品</h3>
+            <div class="row">
+                <div class="col">
+                    <a href="#">
+                        <h4>Hot title</h4>
+                        <img src="../images/hot1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <h4>Hot title</h4>
+                        <img src="../images/hot2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <h4>Hot title</h4>
+                        <img src="../images/hot3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <section id="all" class="container">
+            <h3 class="title">全部商品</h3>
+            <!-- Emmet縮寫
+                ()階層
+                []屬性
+                {}顯示內容
+            -->
+            <!-- div.row>div.col-6.col-sm-4.col-lg-3.col-xxl-2*15>(a>img[src="../images/product/thumbs/img$$_s.jpg"])+h5{產品$}+p{NT.999} -->
+            
+            <!-- div.row>div.col-6.col-sm-4.col-lg-3.col-xxl-2*15>(a[href="../images/product/img$$.jpg" data-lightbox data-title="產品標題$"]>img[src="../images/product/thumbs/img$$_s.jpg"])+h5{產品$}+p{NT.999} -->
+
+            <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img01.jpg" data-lightbox="lightbox" data-title="產品標題1"><img src="../images/product/thumbs/img01_s.jpg" alt=""></a>
+                    <h5>產品1</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img02.jpg" data-lightbox="lightbox" data-title="產品標題2"><img src="../images/product/thumbs/img02_s.jpg" alt=""></a>
+                    <h5>產品2</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img03.jpg" data-lightbox="lightbox" data-title="產品標題3"><img src="../images/product/thumbs/img03_s.jpg" alt=""></a>
+                    <h5>產品3</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img04.jpg" data-lightbox="lightbox" data-title="產品標題4"><img src="../images/product/thumbs/img04_s.jpg" alt=""></a>
+                    <h5>產品4</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img05.jpg" data-lightbox="lightbox" data-title="產品標題5"><img src="../images/product/thumbs/img05_s.jpg" alt=""></a>
+                    <h5>產品5</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img06.jpg" data-lightbox="lightbox" data-title="產品標題6"><img src="../images/product/thumbs/img06_s.jpg" alt=""></a>
+                    <h5>產品6</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img07.jpg" data-lightbox="lightbox" data-title="產品標題7"><img src="../images/product/thumbs/img07_s.jpg" alt=""></a>
+                    <h5>產品7</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img08.jpg" data-lightbox="lightbox" data-title="產品標題8"><img src="../images/product/thumbs/img08_s.jpg" alt=""></a>
+                    <h5>產品8</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img09.jpg" data-lightbox="lightbox" data-title="產品標題9"><img src="../images/product/thumbs/img09_s.jpg" alt=""></a>
+                    <h5>產品9</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img10.jpg" data-lightbox="lightbox" data-title="產品標題10"><img src="../images/product/thumbs/img10_s.jpg" alt=""></a>
+                    <h5>產品10</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img11.jpg" data-lightbox="lightbox" data-title="產品標題11"><img src="../images/product/thumbs/img11_s.jpg" alt=""></a>
+                    <h5>產品11</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img12.jpg" data-lightbox="lightbox" data-title="產品標題12"><img src="../images/product/thumbs/img12_s.jpg" alt=""></a>
+                    <h5>產品12</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img13.jpg" data-lightbox="lightbox" data-title="產品標題13"><img src="../images/product/thumbs/img13_s.jpg" alt=""></a>
+                    <h5>產品13</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img14.jpg" data-lightbox="lightbox" data-title="產品標題14"><img src="../images/product/thumbs/img14_s.jpg" alt=""></a>
+                    <h5>產品14</h5>
+                    <p>NT.999</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                    <a href="../images/product/img15.jpg" data-lightbox="lightbox" data-title="產品標題15"><img src="../images/product/thumbs/img15_s.jpg" alt=""></a>
+                    <h5>產品15</h5>
+                    <p>NT.999</p>
+                </div>
+            </div>
+
+
+        </section>
+        
+    </main>
+
+    <footer>copyright 2024 ZARA. ALL rights reserved.</footer>
+
+    <!-- bootstrap js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- jq CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
